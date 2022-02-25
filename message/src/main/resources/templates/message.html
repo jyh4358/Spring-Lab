@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>message test</title>
+</head>
+<body>
+    <h1 th:text="#{hello}">메시지 사용 테스트</h1>
+
+    <h1 th:text="#{hello.param('파라미터 추가')}">메시지 사용 테스트</h1>
+
+    <h1 th:text="#{hello.param(${paramStr})}">메시지 사용 테스트</h1>
+</body>
+</html>
