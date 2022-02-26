@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Data
 public class Item {
@@ -14,11 +15,11 @@ public class Item {
     @NotBlank
     private String itemName;
 
-    @NotBlank
+    @NotNull
     @Range(min = 1000, max = 1000000)
     private Integer price;
 
-    @NotBlank
+    @NotNull
     @Max(9999)
     private Integer quantity;
 
