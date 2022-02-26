@@ -1,8 +1,10 @@
 # Bean Validation
 블로그 : [Bean Validation 정리](https://jddng.tistory.com/262)
 
+
+
 ### 1. 구현 내용
---------
+---
 - 표준 인터페이스(JSR-303, JSR-380) 사용
 - 간단한 상품 등록 페이지의 검증 구현
 - 적용 애노테이션
@@ -15,6 +17,7 @@
 
 
 ### 2. 구현 이미지
+---
 ![image](https://user-images.githubusercontent.com/97331219/155844160-dc3e9f08-e8c0-4c9d-aad6-0ac4efdf69b3.png)
 
 
