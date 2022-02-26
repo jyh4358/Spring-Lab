@@ -1,6 +1,7 @@
 # Spring-Lab
-Spring을 공부하면서 복습 내용을 커밋하고 있습니다.
-보다 더 깊게 공부하여 Spring을 더 이해하기 위한 기록 공간입니다.
+Spring을 보다 더 깊게 이해하기 위한 공부 공간입니다.
+
+[개인 블로그](https://jddng.tistory.com/category/Spring/Spring%20MVC)
 
 22.02.26
 - [Bean Validation](https://github.com/jyh4358/Spring-Lab/tree/master/validation2)
