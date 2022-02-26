@@ -1,5 +1,5 @@
 # Bean Validation
-[내용 정리](https://jddng.tistory.com/262)
+블로그 : [Bean Validation 정리](https://jddng.tistory.com/262)
 
 ##구현 내용
 --------
@@ -13,3 +13,4 @@
 - ObjectError는 Controller에 직접 구현
 
 ![image](https://user-images.githubusercontent.com/97331219/155844160-dc3e9f08-e8c0-4c9d-aad6-0ac4efdf69b3.png)
+![image](https://user-images.githubusercontent.com/97331219/155844563-540a5cb5-82d1-4cd4-b0c4-e76d4f7fc0f9.png)
