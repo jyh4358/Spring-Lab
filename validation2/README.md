@@ -20,7 +20,7 @@
 
 ### 2. 구현 이미지
 
----
+--- 
 
 
 ![image](https://user-images.githubusercontent.com/97331219/155844160-dc3e9f08-e8c0-4c9d-aad6-0ac4efdf69b3.png)
