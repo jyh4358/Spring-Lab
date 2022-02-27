@@ -15,6 +15,9 @@
     - 수량(quantity) : @Max
 - 각 검증 에러에 대한 에러 메시지 적용
 - ObjectError는 Controller에 직접 구현
+- 단위 테스트
+  - 검증
+  - 에러 메시지 적용
 
 
 
