@@ -27,9 +27,13 @@
 - 서브릿으로 등록한 오류 페이지 호출
  
 
-  ![image](https://user-images.githubusercontent.com/97331219/155973118-29c9fefc-b66b-4b52-9c2c-25b045099069.png) ![image](https://user-images.githubusercontent.com/97331219/155973213-dc15c166-f92a-4455-ad90-8ee8fa173c1f.png)
+![image](https://user-images.githubusercontent.com/97331219/155973118-29c9fefc-b66b-4b52-9c2c-25b045099069.png)
+
+![image](https://user-images.githubusercontent.com/97331219/155973213-dc15c166-f92a-4455-ad90-8ee8fa173c1f.png)
+
 
 - 스프링 부트에서 제공하는 오류 페이지 처리 이용
 
 ![image](https://user-images.githubusercontent.com/97331219/155973469-675f39a8-c285-4b9b-8350-2ea6d840e5e1.png)
+
 ![img_1.png](img_1.png)
