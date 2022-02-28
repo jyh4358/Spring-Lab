@@ -12,9 +12,9 @@
 
 - 서브릿으로 오류 페이지 등록과 호출 구현
   - 상태코드와 Exception에 따른 오류 페이지 호출
-  - WebServerCustomizer 컨테이너에 등록
+  - 컨테이너에 WebServerCustomizer 등록
     - 상태코드(404, 500), exception에 따른 오류 페이지 등록
-  - WAS에서 오류 페이지 요청을 처리하는 컨트롤러 구현
+  - 스프링 부트에서 제공하는 BasicErrorController를 이용한 간단한 오류 페이지 구현
 
 
 - 스프링 부트의 오류 페이지 처리 간단한 구현
