@@ -1,0 +1,31 @@
+package hello.exceptionapi.api;
+
+import hello.exceptionapi.exception.UserException;
+import hello.exceptionapi.exhandler.ErrorResult;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+@Slf4j
+@RestController
+public class ExceptionHandlerController {
+
+
+
+    @GetMapping("/api2/members/{id}")
+    public MemberDto getMember(@PathVariable(name = "id") String id) {
+
+        if (id.equals("ex")) {
+            throw new RuntimeException("잘못된 사용자");
+        }
+        if (id.equals("bad")) {
+            throw new IllegalArgumentException("잘못된 입력");
+        }
+        if (id.equals("user-ex")) {
+            throw new UserException("사용자 오류");
+        }
+
+        return new MemberDto(id, "hello" + id);
+    }
+
+}
