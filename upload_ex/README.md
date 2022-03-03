@@ -1,6 +1,6 @@
-# Upload File 조회 및 다운로드
+# 파일 업로드와 다운로드
 블로그
-- [파일 업로드와 다운로드 구현](https://jddng.tistory.com/294)
+- [파일 업로드와 다운로드](https://jddng.tistory.com/294)
 
 간단한 파일 업로드와 업로드한 파일을 조회 및 다운로드 예제 구현
 
