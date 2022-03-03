@@ -30,6 +30,7 @@ public class FileStore {
         // 서버에 저장하는 파일명
         String storeFilename = createStoreFilename(originalFilename);
 
+        // 서버에 저장
         multipartFile.transferTo(new File(getFullPath(storeFilename)));
 
         return new UploadFile(originalFilename, storeFilename);
