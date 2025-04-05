@@ -1,0 +1,54 @@
+spring:
+  profiles:
+    active: local
+    include:
+      - db
+
+
+
+  datasource:
+    url: ${db.url} # 데이터베이스 URL
+    username:  ${db.username} # 데이터베이스 사용자 이름
+    password:  ${db.password} # 데이터베이스 비밀번호
+    driver-class-name: com.mysql.cj.jdbc.Driver # 데이터베이스 드라이버 클래스 이름
+    hikari:
+      maximum-pool-size: 50 # 유휴 상태와 사용중인 커넥션을 포함해서 풀이 허용하는 최대 커넥션 개수
+      minimum-idle: 10 # 풀에 유지할 유휴 커넥션의 최소 개수, 설정하지 않을 경우 maximum-pool-size 와 동일
+      idle-timeout: 600000 # 1분, 커넥션이 풀에서 유휴 상태로 남을 수 있는 최대 시간을 밀리초 단위로 지정
+      connection-timeout: 5000 #5초, 풀에서 커넥션을 구할 때 대기 시간을 밀리초 단위로 지정
+      max-lifetime: 3600000 # 3분, 커넥션의 최대 유지 시간을 밀리초 단위로 설정한다. 이 시간이 지난 커넥션 중에서 사용중인 커넥션은 종료된 이후에 풀에서 제거한다.
+  sql:
+    init:
+      encoding: UTF-8
+      mode: always  # 애플리케이션을 시작할 때 데이터베이스 스키마를 어떻게 초기화할지를 결정하는 데 사용
+  jpa:
+    hibernate:
+      ddl-auto: update # 스키마 자동 생성 옵션 (none, validate, update, create, create-drop)#
+    #    show-sql: true # 실행되는 SQL을 출력할지 여부#
+    open-in-view: false # Open EntityManager in View 패턴 사용 여부#
+
+    properties:
+      hibernate:
+        #        format_sql: true # SQL 포맷팅 여부
+        dialect: org.hibernate.dialect.MySQLDialect # Hibernate Dialect 설정
+        #        show_sql: true # 실행되는 SQL을 출력할지 여부
+        #        use_sql_comments: true # SQL에 주석 추가 여부
+        #        cache.use_second_level_cache: true # 2차 캐시 사용 여부
+        #        cache.use_query_cache: true # 쿼리 캐시 사용 여부
+        #        cache.region.factory_class: org.hibernate.cache.jcache.JCacheRegionFactory # 캐시 지역 팩토리 클래스
+
+        # Naming 전략 설정
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # 물리적 네이밍 전략
+        #          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl # 암묵적 네이밍 전략
+        query:
+          plan_cache_max_size: 1024
+          plan_parameter_metadata_max_size: 64
+          in_clause_parameter_padding: true
+
+        # JPA 매개변수 설정
+        jdbc:
+          batch_size: 50 # JDBC 배치 크기
+        order_inserts: true # 삽입 명령 정렬 여부
+        order_updates: true # 업데이트 명령 정렬 여부
+        generate_statistics: false # Hibernate 통계 생성 여부
