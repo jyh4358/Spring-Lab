@@ -30,7 +30,7 @@ spring:
     properties:
       hibernate:
         #        format_sql: true # SQL 포맷팅 여부
-        dialect: org.hibernate.dialect.MySQLDialect # Hibernate Dialect 설정
+#        dialect: org.hibernate.dialect.MySQLDialect # Hibernate Dialect 설정, 최신 버전에서는 자동으로 감지함
         #        show_sql: true # 실행되는 SQL을 출력할지 여부
         #        use_sql_comments: true # SQL에 주석 추가 여부
         #        cache.use_second_level_cache: true # 2차 캐시 사용 여부
