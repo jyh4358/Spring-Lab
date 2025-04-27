@@ -1,4 +1,4 @@
-package com.jdong.lab.java.memory_visibility;
+package com.jdong.lab.java.thread.memory_visibility;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
