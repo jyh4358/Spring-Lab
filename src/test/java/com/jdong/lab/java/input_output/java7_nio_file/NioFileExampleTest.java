@@ -36,7 +36,7 @@ class NioFileExampleTest {
     );
   }
 
-  @DisplayName("파일 쓰기, 삭제 테스트")
+  @DisplayName("NIO 파일 쓰기, 삭제 테스트")
   @Test
   void testWriteAndDelete() throws Exception {
     example.writeFile(targetFile, INIT_FILE_CONTENT, StandardOpenOption.CREATE);
@@ -60,7 +60,7 @@ class NioFileExampleTest {
     assertFalse(Files.exists(targetFile));
   }
 
-  @DisplayName("파일 이동 테스트")
+  @DisplayName("NIO 파일 이동 테스트")
   @Test
   void testMoveFile() throws Exception {
     example.moveFile(file, movedFile);
