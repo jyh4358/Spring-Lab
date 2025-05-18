@@ -39,3 +39,4 @@ out/
 
 ### 제외 파일 ###
 /src/main/resources/application-db.yml
+/src/test/resources/nio_file_test/**
