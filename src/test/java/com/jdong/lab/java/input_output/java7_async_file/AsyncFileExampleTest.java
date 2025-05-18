@@ -31,6 +31,10 @@ class AsyncFileExampleTest {
 
   /**
    * 참고로 쓰기와 읽기를 버퍼만큼 쓰고, 읽을려면 추가 로직이 필요하다. (position 계산 및 루프 추가)
+   * 또한, 해당 코드는 간단하게 구현하기 위해 Future.get() 메서드를 호출하여 블로킹 방식으로 구현된 코드이다.
+   * 따라서 논블로킹으로 처리하기 위해서는 로직 변경이 필요하며 CompletionHandler를 사용하면 된다.
+   * (AsynchronousFileChannel 를 기본 open(path, options) 으로 열면,
+   * 내부적으로는 시스템 전역의 AsynchronousChannelGroup 이 관리하는 스레드 풀을 사용)
    */
   @DisplayName("Asyc 파일 쓰기, 읽기 테스트")
   @Test
