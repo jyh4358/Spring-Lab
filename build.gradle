@@ -43,10 +43,24 @@ dependencies {
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 
 
+	// 📔
+	// 외부 API 호출을 위한 WebFlux + Reactor
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	// 파일명 파싱용 Apache Commons IO
+//	implementation 'commons-io:commons-io'
+	// springdoc-openapi: WebMVC + Swagger UI
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+//
+//	// (Optional) YAML 스펙 노출
+//	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:3.4.4'
+
+
+
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	testImplementation 'io.projectreactor:reactor-test'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
